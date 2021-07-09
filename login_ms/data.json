@@ -1,0 +1,6 @@
+{
+    "DataSource":"mongodb",
+    "DbHost":"localhost",
+    "DbPort":"27017",
+    "DbName":"CS_Soft_User_DB"
+  }

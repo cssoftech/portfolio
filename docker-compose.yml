@@ -1,0 +1,28 @@
+version: '3'
+services:
+  login4_ms:
+    build: './login_ms'
+    ports:
+      - "3000:3000"
+    
+  contracts1_ms:
+    build: './contracts_ms'
+    ports:
+      - "3001:3000"
+    
+
+  billing_and_payments_ms:
+    build: './billing_and_payments_ms'
+    ports:
+      - "3002:3000"
+  
+  access_controle:
+    build: './access_controle_ms'
+    ports: 
+      - "3003:3000"
+  db:
+    image: mongo
+    ports:
+      - "27017:27017"
+
+  
